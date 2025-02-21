@@ -3,17 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 a {
     text-decoration: none;
     color: black;
 }
-
 @font-face {
     font-family: Poppins ;
     src: url(./fonts/Poppins-Regular.ttf);
 }
-
 header {
     display: flex;
     max-width: 1300px;
@@ -22,13 +19,11 @@ header {
     align-items: center;
     font-family: Poppins;
 }
-
 .logo {
     width: 200px;
     height: 100px;
     margin: 10px;
 }
-
 .nav {
     list-style: none;
     display: flex;
@@ -36,7 +31,6 @@ header {
         margin: 10px;
     }
 }
-
 a:hover {
     cursor: pointer;
     color: #828C70;
@@ -44,7 +38,6 @@ a:hover {
     transition-timing-function: ease-in-out;
     transition-duration: 0.3s;
 }
-
 .price-information {
     background-color: rgb(184, 18, 18);
     padding: 10px 0px;
@@ -56,7 +49,6 @@ a:hover {
         font-weight: bold;
     }
 }
-
 .jumbotron{
     width: 100%;
     height: 750px;
@@ -81,7 +73,6 @@ a:hover {
         background-color: rgb(31, 26, 26);
     }
 }
-
 .slogan {
     color: rgb(255, 255, 255);
     z-index: 2;
@@ -89,7 +80,6 @@ a:hover {
     margin-bottom: 10px;
     margin-left: 3rem;
 }
-
 .company {
     max-width: 1300px;
     margin: auto;
@@ -106,7 +96,6 @@ a:hover {
         margin-left: 10px;
     }
 }
-
 .biography {
     margin-top: 2em;
     display: flex;
@@ -124,7 +113,6 @@ a:hover {
         text-align: justify;
     }
 }
-
 .customers {
     background-color: black;
     display: flex;
@@ -138,13 +126,11 @@ a:hover {
         font-weight: bolder;
     }
 }
-
 .container-image {
     img {
         width: 100%;
     }
 }
-
 .all-services {
     max-width: 1300px;
     margin: auto;
@@ -164,7 +150,6 @@ a:hover {
         margin-bottom: 1em;
     }
 }
-
 .services-content {
     gap: 20px; 
     display: flex;
@@ -173,7 +158,6 @@ a:hover {
     align-items: center;
     margin-bottom: 2em;
 }
-
 .services {
     background-color: #ffffff; 
     padding: 15px;
@@ -183,25 +167,21 @@ a:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     width: 33.33%;
 }
-
 .services:nth-child(1){
     padding: 25px 0;
 }
-
 .services img {
     width: 100px; 
     height: 100px;
     object-fit: cover; 
     margin-bottom: 10px; 
 }
-
 .services span {
     display: block; 
     font-weight: bold;
     color:#ECB87A;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 .services:hover {
     cursor: pointer;
     transition-property: all;
@@ -209,12 +189,10 @@ a:hover {
     transition-duration: 0.3s;
     background-color: #f0f0f0 ;
 }
-
 .publicity {
     display: flex;
     margin-top: 5em;
 }
-
 .local {
     width: 70%;
     img {
@@ -222,7 +200,6 @@ a:hover {
         height: 100%;
     }
 }
-
 .block-container {
     display: flex;
     justify-content: center;
@@ -241,7 +218,6 @@ a:hover {
         border-radius: 10px;
     }
 }
-
 .information-mail {
     max-width: 1300px;
     margin: auto;
@@ -265,7 +241,6 @@ a:hover {
         color: #ECB87B;
     }
 }
-
 .notice {
     h2 {
         color: #80855E;
@@ -274,13 +249,11 @@ a:hover {
         margin-top: 3em;
     }
 }
-
 footer {
     margin-top: 5rem;
     display: flex;
     justify-content: space-between;
 }
-
 .first {
     display: flex;
     width: 50%;
@@ -297,13 +270,11 @@ footer {
         width: 50px;
     }
 }
-
 .identity {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .information-company {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -316,8 +287,6 @@ footer {
         margin: 10px;
     }
 }
-
-
 .third {
     width: 50%;
     .screenshot-plan {
@@ -325,7 +294,6 @@ footer {
         height: 100%;
     }
 }
-
 .seo {
     display: flex;
     justify-content: space-evenly;
@@ -340,16 +308,12 @@ footer {
         text-decoration: underline;
     }
 }
-
-
-
 .structuration {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-
 .title-service {
     box-shadow:-2px -5px 5px rgba(209, 209, 209, 0.3), 
     2px -5px 5px rgba(209, 209, 209, 0.3), 
@@ -367,7 +331,6 @@ footer {
     align-items: center;
     width: 700px;
 }
-
 .presentation-text {
     box-shadow:-2px -5px 5px rgba(209, 209, 209, 0.3), 
     2px -5px 5px rgba(209, 209, 209, 0.3), 
@@ -380,7 +343,6 @@ footer {
     width: 700px;
     text-align: justify;
 }
-
 .jumbotron-deux {
     margin-top: 4rem;
     background-image: url(./images/reprographie.jpg);
@@ -396,7 +358,6 @@ footer {
         margin: 20px;
     }
 }
-
 .jumbotron-trois {
     margin-top: 4rem;
     background-image: url(./images/jumbotron-communication.png);
@@ -412,7 +373,6 @@ footer {
         margin: 20px;
     }
 }
-
 .jumbotron-quatre {
     margin-top: 4rem;
     background-image: url(./images/relieuse.png);
@@ -428,7 +388,6 @@ footer {
         margin: 20px;
     }
 }
-
 .jumbotron-cinq {
     margin-top: 4rem;
     background-image: url(./images/jumbotron-affiche.png);
@@ -447,7 +406,6 @@ footer {
         margin-left: 11em;
     }
 }
-
 .jumbotron-six {
     margin-top: 4rem;
     background-image: url(./images/flocage-jumbotron.png);
@@ -463,7 +421,6 @@ footer {
         margin: 20px;
     }
 }
-
 .jumbotron-sept {
     margin-top: 4rem;
     background-image: url(./images/jumbotronplan.png);
@@ -482,7 +439,6 @@ footer {
         margin-left: 11em;
     }
 }
-
 .information-service {
     box-shadow:-2px -5px 5px rgba(209, 209, 209, 0.3), 
     2px -5px 5px rgba(209, 209, 209, 0.3), 
@@ -497,7 +453,6 @@ footer {
         margin: 20px;
     }
 }
-
 .icones {
     display: flex;
     align-items: center;
@@ -508,7 +463,6 @@ footer {
         height: 50px;
     }
 }
-
 .icones-plan {
     display: flex;
     align-items: center;
@@ -520,7 +474,6 @@ footer {
         margin: 20px;
     }
 }
-
 .sublimation {
     display: flex;
     align-items: center;
@@ -531,7 +484,7 @@ footer {
         width: 250px;
         margin: 20px;
         border-radius: 10px;
-        border: black 2px solid;
+        border: black 1px solid;
     }
     img:hover{
         height: 360px;
@@ -542,16 +495,13 @@ footer {
         cursor: pointer;
     }
 }
-
 .slogan-flocage {
     text-align: center;
     margin-top: 2em;
     h1 {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family:fantasy;
     }
 }
-
-
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
@@ -580,7 +530,6 @@ footer {
         font-size: 1.2rem;
     }
 }
-
 @media screen and (max-width: 480px) {
    
     footer {
@@ -614,7 +563,7 @@ footer {
     }
 
     .seo {
-        font-size: 5px;
+        font-size: 7px;
         display: flex;
         flex-direction: column;
         p {
@@ -693,6 +642,62 @@ footer {
         span {
             margin: 10px;
             font-size: 10px;
+        }
+    }
+
+    .title-service {
+        width: 300px;
+        h2 {
+            font-size: 13px;
+        }
+    }
+
+    .presentation-text {
+        width: 300px;
+        p {
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+
+    .jumbotron-deux, .jumbotron-cinq, .jumbotron-quatre, .jumbotron-trois, .jumbotron-deux, .jumbotron-six, .jumbotron-sept {
+        height: 300px;
+        img {
+            height: 70px;
+            width: 70px;
+        }
+    }
+
+    .jumbotron-sept, .jumbotron-cinq {
+        #logofsc {
+            margin-left: 5em;
+        }
+    }
+
+    .information-service {
+        width: 300px;
+        p {
+            font-size: 12px;
+        }
+    }
+
+    #photo-trois {
+        display: none;
+    }
+
+    .sublimation {
+        h1 {
+            font-size: 20px;
+        }
+        img {
+            height: 250px;
+            width: 200px;
+        }
+    }
+
+    .slogan-flocage {
+        h1 {
+            font-size: 15px;
         }
     }
 } 
