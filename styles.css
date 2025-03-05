@@ -1,0 +1,965 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    animation: transitionIn 1s ;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@font-face {
+    font-family: Poppins ;
+    src: url(./fonts/Poppins-Regular.ttf);
+}
+header {
+    display: flex;
+    max-width: 1300px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Poppins;
+}
+.logo {
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+}
+.nav {
+    list-style: none;
+    display: flex;
+    .nav-items {
+        margin: 10px;
+    }
+}
+a:hover {
+    cursor: pointer;
+    color: #828C70;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+}
+.price-information {
+    background-color: rgb(184, 18, 18);
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+    span {
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+    }
+}
+.jumbotron{
+    width: 100%;
+    height: 750px;
+    background-image: url(./images/boutique.jpeg);
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .content {
+        margin-top: 5rem;
+    }
+    button {
+        background-color: black;
+        padding: 13px 20px;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        margin-left: 3rem;
+    }
+    button:hover {
+        cursor: pointer;
+        background-color: rgb(31, 26, 26);
+    }
+}
+.slogan {
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    font-family: Poppins;
+    margin-bottom: 10px;
+    margin-left: 3rem;
+    padding: 10px;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+    font-size: 40px;
+}
+.company {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    margin-top: 5em;
+    box-shadow:-2px -5px 5px rgba(209, 209, 209, 0.3), 
+    2px -5px 5px rgba(209, 209, 209, 0.3), 
+    -5px 5px 10px rgba(209, 209, 209, 0.3),
+    2px 5px 10px rgba(209, 209, 209, 0.3);  
+    border-radius: 5px ;
+    img {
+        width: 200px;
+        height : 200px;
+        margin-left: 10px;
+    }
+}
+.biography {
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: Poppins;
+    h2 {
+        color: #80855E;
+    }
+    p {
+        padding: 5px 0;
+        padding-right: 100px;
+        padding-left: 70px;
+        margin: 10px 0;
+        text-align: justify;
+    }
+}
+.customers {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+    height: 100px;
+    h2 {
+        color: white;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+    }
+}
+.container-image {
+    img {
+        width: 100%;
+    }
+}
+.all-services {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    margin-top: 5em;
+    padding: 20px; 
+    flex-direction: column;
+    box-shadow: -2px -5px 5px rgba(209, 209, 209, 0.3), 
+                2px -5px 5px rgba(209, 209, 209, 0.3), 
+                -5px 5px 10px rgba(209, 209, 209, 0.3),
+                2px 5px 10px rgba(209, 209, 209, 0.3);  
+    border-radius: 5px;
+    h2 {
+        color: #80855E;
+        font-family: Poppins;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+}
+.services-content {
+    gap: 20px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+.services {
+    background-color: #ffffff; 
+    padding: 15px;
+    text-align: center; 
+    border: 1px solid #e0e0e0; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    width: 33.33%;
+}
+.services:nth-child(1){
+    padding: 25px 0;
+}
+.services img {
+    width: 100px; 
+    height: 100px;
+    object-fit: cover; 
+    margin-bottom: 10px; 
+}
+.services span {
+    display: block; 
+    font-weight: bold;
+    color:#ECB87A;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.services:hover {
+    cursor: pointer;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+    background-color: #f0f0f0 ;
+}
+
+
+.publicity {
+    display: flex;
+    margin-top: 5em;
+}
+.local {
+    width: 70%;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+.block-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ECB87A;
+    width: 30%; 
+    h2 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #004654;
+        margin-bottom: 2rem;
+    }
+    img {
+        width: 250px;
+        height: 100px;
+        border-radius: 10px;
+    }
+}
+.information-mail {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    margin-top: 5em;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+    flex-direction: column;
+    box-shadow: -2px -5px 5px rgba(209, 209, 209, 0.3), 
+                2px -5px 5px rgba(209, 209, 209, 0.3), 
+                -5px 5px 10px rgba(209, 209, 209, 0.3),
+                2px 5px 10px rgba(209, 209, 209, 0.3);  
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    h3 {
+        display: flex;
+        margin: 15px;
+    }
+    a {
+        color: #ECB87B;
+    }
+}
+.notice {
+    h2 {
+        color: #80855E;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        margin-top: 3em;
+    }
+}
+footer {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.first {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    .logo-company {
+        width: 200px;
+        height: 100px;
+        margin: 50px;
+    }
+    .social-media {
+        height: 50px;
+        width: 50px;
+    }
+}
+.identity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.information-company {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    p {
+        margin: 10px;
+    }
+}
+.third {
+    width: 50%;
+    .screenshot-plan {
+        width: 100%;
+        height: 100%;
+    }
+}
+.seo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    font-size: 10px;
+    p:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: white;
+    }
+    a {
+        color: white;
+    }
+}
+.structuration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title-service {
+    box-shadow:-2px -5px 5px rgba(209, 209, 209, 0.3), 
+    2px -5px 5px rgba(209, 209, 209, 0.3), 
+    -5px 5px 10px rgba(209, 209, 209, 0.3),
+    2px 5px 10px rgba(209, 209, 209, 0.3);  
+    border-radius: 5px ;
+    font-family: Poppins;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 2em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+}
+.presentation-text {
+    box-shadow:-2px -5px 5px rgba(209, 209, 209, 0.3), 
+    2px -5px 5px rgba(209, 209, 209, 0.3), 
+    -5px 5px 10px rgba(209, 209, 209, 0.3),
+    2px 5px 10px rgba(209, 209, 209, 0.3);  
+    border-radius: 5px ;
+    margin-top: 3em;
+    padding: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 700px;
+    text-align: justify;
+}
+.jumbotron-deux {
+    margin-top: 4rem;
+    background-image: url(./images/reprographie.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        margin: 20px;
+    }
+}
+.jumbotron-trois {
+    margin-top: 4rem;
+    background-image: url(./images/jumbotron-communication.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        margin: 20px;
+    }
+}
+.jumbotron-quatre {
+    margin-top: 4rem;
+    background-image: url(./images/relieuse.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        margin: 20px;
+    }
+}
+.jumbotron-cinq {
+    margin-top: 4rem;
+    background-image: url(./images/jumbotron-affiche.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 120%;
+    height: 550px;
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        margin: 20px;
+    }
+    #logofsc {
+        margin-left: 11em;
+    }
+}
+.jumbotron-six {
+    margin-top: 4rem;
+    background-image: url(./images/flocage-jumbotron.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        margin: 20px;
+    }
+}
+.jumbotron-sept {
+    margin-top: 4rem;
+    background-image: url(./images/jumbotronplan.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 120%;
+    height: 550px;
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        margin: 20px;
+    }
+    #logofsc {
+        margin-left: 11em;
+    }
+}
+.information-service {
+    box-shadow:-2px -5px 5px rgba(209, 209, 209, 0.3), 
+    2px -5px 5px rgba(209, 209, 209, 0.3), 
+    -5px 5px 10px rgba(209, 209, 209, 0.3),
+    2px 5px 10px rgba(209, 209, 209, 0.3);  
+    border-radius: 5px ;
+    margin-top: 3rem;
+    padding: 40px;
+    font-family: Poppins;
+    text-align: center;
+    p {
+        margin: 20px;
+    }
+}
+.icones {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2em;
+    img {
+        width: 50px;
+        height: 50px;
+    }
+}
+.icones-plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2em;
+    img {
+        width: 70px;
+        height: 50px;
+        margin: 20px;
+    }
+}
+.sublimation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+    img {
+        height: 350px;
+        width: 250px;
+        margin: 20px;
+        border-radius: 10px;
+        border: black 1px solid;
+    }
+    img:hover{
+        height: 360px;
+        width: 260px;
+        transition-property: all;
+        transition-timing-function: ease-in-out;
+        transition-duration: 0.5s;
+        cursor: pointer;
+        transform: rotate(5deg);
+    }
+}
+.slogan-flocage {
+    text-align: center;
+    margin-top: 2em;
+    h1 {
+        font-family:fantasy;
+    }
+}
+
+.mentionslegales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    font-family: Poppins;
+    h1 {
+        text-align: center;
+        margin: 10px;
+    }
+    p {
+        margin: 5px;
+    }
+    h2 {
+        margin: 15px 0px;
+    }
+}
+
+.society {
+    padding: 20px;
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 991px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav {
+        text-align: center;
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }
+
+    .price-information {
+        text-align: center;
+        font-size: 10px;
+        span {
+            margin: 5px;
+        }
+    }
+
+    .services {
+        width: 100%;
+    }
+
+    .jumbotron {
+        height: 500px;
+    }
+
+    .slogan {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .seo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        span {
+            margin: 5px;
+        }
+        p {
+            margin: 5px;
+        }
+    }
+
+    .first {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .third {
+        width: 100%;
+        margin-top: 1em;
+    }
+
+    .information-company {
+        font-size: 12px;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    .block-container {
+        img {
+            width:100px;
+            height: 50px;
+        }
+    }
+
+    .information-mail {
+        max-width: 500px ;
+        h3 {
+            text-align: center;
+        }
+    }
+
+    .all-services {
+        max-width: 500px;
+    }
+
+    .customers {
+        h2 {
+            font-size: 15px;
+        }
+    }
+
+    .company {
+        max-width: 481px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .biography {
+            margin-bottom: 10px;
+        }
+        img {
+            height: 150px;
+            width: 150px;
+            margin-top: 10px;
+        }
+    }
+
+    .title-service {
+        width: 400px;
+        h2 {
+            font-size: 13px;
+        }
+    }
+
+    .presentation-text {
+        width: 300px;
+        p {
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+
+    .jumbotron-deux, .jumbotron-cinq, .jumbotron-quatre, .jumbotron-trois, .jumbotron-deux, .jumbotron-six, .jumbotron-sept {
+        height: 400px;
+        img {
+            height: 70px;
+            width: 70px;
+        }
+    }
+
+    .notice {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .elfsight-app-7a802c92-5cc6-40be-a43d-0d882f02c789 {
+        max-width: 400px;
+        margin-top: 10px;
+    }
+
+
+}
+@media screen and (max-width: 480px) {
+   
+    footer {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .first {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .information-company {
+        font-size: 13px;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    .third {
+        width: 100%;
+    }
+
+    .nav-items {
+        font-size: 14px;
+    }
+
+    .slogan {
+        font-size: 1rem;
+    }
+
+    .seo {
+        font-size: 7px;
+        display: flex;
+        flex-direction: column;
+        p {
+            margin: 7px 0;
+        }
+        span {
+            margin: 7px 0;
+        }
+    }
+
+    .notice {
+        h2 {
+            font-size: 15px;
+        }
+    }
+
+    .information-mail {
+        max-width: 380px;
+        h3 {
+            font-size: 13px;
+            text-align: center;
+        }
+    }
+
+    .block-container {
+        img {
+        width: 100px;
+        height: 50px;
+        }
+    }
+
+    .customers {
+        h2 {
+            font-size: 15px;
+        }
+        text-align: center;
+    }
+
+    .logo-ecology {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    .company {
+        flex-direction: column;
+        max-width: 400px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        h2 {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .biography {
+        margin-bottom: 2rem;
+        text-align: justify;
+        p {
+            margin-bottom: 2rem;
+        }
+    }
+
+    .jumbotron {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        button {
+            display: none;
+        }
+    }
+
+    .price-information {
+        margin-top: 2rem;
+        span {
+            margin: 10px;
+            font-size: 10px;
+        }
+    }
+
+    .title-service {
+        width: 300px;
+        h2 {
+            font-size: 13px;
+        }
+    }
+
+    .presentation-text {
+        width: 300px;
+        p {
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+
+    .jumbotron-deux, .jumbotron-cinq, .jumbotron-quatre, .jumbotron-trois, .jumbotron-deux, .jumbotron-six, .jumbotron-sept {
+        height: 300px;
+        img {
+            height: 70px;
+            width: 70px;
+        }
+    }
+
+    .jumbotron-sept, .jumbotron-cinq {
+        #logofsc {
+            margin-left: 5em;
+        }
+    }
+
+    .information-service {
+        width: 300px;
+        p {
+            font-size: 12px;
+        }
+    }
+
+    #photo-trois {
+        display: none;
+    }
+
+    .sublimation {
+        h1 {
+            font-size: 20px;
+        }
+        img {
+            height: 250px;
+            width: 200px;
+        }
+    }
+
+    .slogan-flocage {
+        h1 {
+            font-size: 15px;
+        }
+    }
+
+    .all-services {
+        max-width: 400px;
+    }
+
+    .notice {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .elfsight-app-7a802c92-5cc6-40be-a43d-0d882f02c789 {
+        max-width: 400px;
+    }
+} 
+
+@media screen and (min-width: 360px ) and (max-width : 479px){
+        header {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .price-information {
+            text-align: center;
+
+        }
+
+        .jumbotron {
+            height: 300px;
+        }
+
+        .company {
+            max-width: 330px;
+            img {
+                height: 100px;
+                width: 100px;
+
+            }
+            .biography {
+                text-align: justify;
+                h2 {
+                    font-size: 15px;
+                }
+                p {
+                    font-size: 10px;
+                }
+            }
+        }
+
+        .slogan {
+            margin-left: 2rem;
+        }
+
+        .all-services {
+            max-width: 350px;
+            h2 {
+                font-size: 15px;
+            }
+            display: flex;
+            flex-direction: column;
+            .services {
+                width: 100%;
+            }
+            span {
+                font-size: 10px;
+            }
+        }
+
+        .information-mail {
+            max-width: 350px;
+        }
+
+        .elfsight-app-7a802c92-5cc6-40be-a43d-0d882f02c789 {
+            max-width: 350px;
+        }
+        
+}

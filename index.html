@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="DK REPRO" content="Page principale présentant l'entreprise avec ses informations et ses différents services imprimerie, reprographie, flocage textile...">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles.css">
     <title>DK REPRO</title>
 </head>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@latest/tarteaucitron.js"></script>
+<script type="text/javascript">
+  tarteaucitron.init({
+    "privacyUrl": "/politique-de-cookies", /* Lien vers votre politique de cookies */
+    "hashtag": "#tarteaucitron", /* Identifiant pour le bandeau */
+    "cookieName": "tarteaucitron", /* Nom du cookie de gestion */
+    "orientation": "bottom", /* Position du bandeau */
+    "showAlertSmall": false, /* Petite icône flottante */
+    "cookieslist": true, /* Afficher la liste des cookies */
+    "adblocker": false, /* Détection d'Adblock */
+    "AcceptAllCta": true, /* Bouton "Tout accepter" */
+    "DenyAllCta": true, /* Bouton "Tout refuser" */
+    "highPrivacy": true, /* Blocage des cookies avant consentement */
+    "handleBrowserDNTRequest": false, /* Respect du "Do Not Track" */
+    "removeCredit": true, /* Suppression du lien vers Tarteaucitron */
+    "moreInfoLink": true, /* Affichage du bouton "En savoir plus" */
+    "useExternalCss": false /* Utilisation des styles par défaut */
+  });
+</script>
+<script type="text/javascript">
+    tarteaucitron.user.gtagUa = 'UA-XXXXX-Y';
+    (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
+</script>
 <body>
     <header>
         <div>
@@ -27,8 +50,12 @@
     </div>
     <main>
         <div class="jumbotron">
-            <h1 class="slogan">DK REPRO - LA QUALITÉ D'IMPRESSION À VOTRE PORTÉE</h1>
-            <button>Nos services</button>
+            <div class="content">
+                <h1 class="slogan">LA QUALITÉ D'IMPRESSION À VOTRE PORTÉE</h1>
+                <a href="#service">
+                    <button>Nos services</button>
+                </a>
+            </div>
         </div>
 
         <section class="company">
@@ -59,37 +86,37 @@
             <h2>SERVICES</h2>
             <div class="services-content">
                 <div class="services">
-                    <a href="./imprimerie.html" target="_blank">
+                    <a href="./imprimerie.html" target="_self">
                         <img src="./images/icone-imprimante.png" alt="icone-imprimante">
                         <span>IMPRIMERIE / REPROGRAPHIE</span>
                     </a>
                 </div>
                 <div class="services">
-                    <a href="./communication.html" target="_blank">
+                    <a href="./communication.html" target="_self">
                         <img src="./images/icone-carte-de-visite.png" alt="icone-carte-de-visite">
                         <span>COMMUNICATION ENTREPRISE / PARTICULIER</span>
                     </a>
                 </div>
                 <div class="services">
-                    <a href="./reliure.html" target="_blank">
+                    <a href="./reliure.html" target="_self">
                         <img src="./images/blocnote.png" alt="icone-blocnote">
                         <span>RELIURE</span>
                     </a>
                 </div>
                 <div class="services">
-                    <a href="./afficheposter.html" target="_blank">
+                    <a href="./afficheposter.html" target="_self">
                         <img src="./images/serviceposter.png" alt="photoicone-poster">
                         <span>AFFICHE & POSTER</span>
                     </a>
                 </div>
                 <div class="services">
-                    <a href="./flocage.html" target="_blank">
+                    <a href="./flocage.html" target="_self">
                         <img src="./images/serviceflocage.png" alt="photo-service-flocage">
                         <span>FLOCAGE TEXTILE</span>
                     </a>
                 </div>
                 <div class="services">
-                    <a href="./tiragedeplan.html" target="_blank">
+                    <a href="./tiragedeplan.html" target="_self">
                         <img src="./images/icone-tirageplanmaison.png" alt="Service 8">
                         <span>TIRAGE DE PLAN</span>
                     </a>
@@ -140,8 +167,8 @@
     </footer>
     <div class="seo">
         <span>DK REPRO © 2024 TOUS DROITS RÉSERVÉS</span>
-        <p>MENTIONS LÉGALES</p>
-        <p>POLITIQUES DE CONFIDENTIALITÉ</p>
+        <a href="mentionslégales.html" target="_blank"><p>MENTIONS LÉGALES</p></a>
+        <!-- <p>POLITIQUES DE CONFIDENTIALITÉ</p> -->
         <p>GESTION DES COOKIES</p>
     </div>
 </body>
