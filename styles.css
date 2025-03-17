@@ -623,6 +623,17 @@ th, td {
     }
 }
 
+.table-price {
+    margin-top: 4em;
+    margin-bottom: 4em;
+    border-radius: 3px;
+    p {
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
+
 @media screen and (min-width: 481px) and (max-width: 991px) {
 
     header {
@@ -768,6 +779,30 @@ th, td {
         max-width: 400px;
         margin-top: 10px;
     }
+
+
+.table-price {
+    margin-top: 4em;
+    margin-bottom: 4em;
+    border-radius: 3px;
+    p {
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
+
+th, td {
+    border: 2px solid rgba(224, 224, 224, 0.3);
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+    span {
+        font-family: Poppins;
+        font-size: 15px;
+    }
+}
+
 
 
 }
@@ -959,9 +994,31 @@ th, td {
     .elfsight-app-7a802c92-5cc6-40be-a43d-0d882f02c789 {
         max-width: 400px;
     }
+
+    .table-price {
+        margin-top: 4em;
+        margin-bottom: 4em;
+        border-radius: 3px;
+        p {
+            font-family: Poppins;
+            font-size: 10px;
+            font-weight: bold;
+        }
+    }
+    
+    th, td {
+        border: 2px solid rgba(224, 224, 224, 0.3);
+        border-radius: 4px;
+        padding: 5px;
+        text-align: center;
+        span {
+            font-family: Poppins;
+            font-size: 10px;
+        }
+    }
 } 
 
-@media screen and (min-width: 360px ) and (max-width : 479px){
+@media screen and (min-width: 300px ) and (max-width : 479px){
         header {
             display: flex;
             flex-direction: column;
@@ -1019,6 +1076,28 @@ th, td {
 
         .elfsight-app-7a802c92-5cc6-40be-a43d-0d882f02c789 {
             max-width: 350px;
+        }
+
+        .table-price {
+            margin-top: 3em;
+            margin-bottom: 2em;
+            border-radius: 3px;
+            p {
+                font-family: Poppins;
+                font-size: 10px;
+                font-weight: bold;
+            }
+        }
+        
+        th, td {
+            border: 2px solid rgba(224, 224, 224, 0.3);
+            border-radius: 4px;
+            padding: 2px;
+            text-align: center;
+            span {
+                font-family: Poppins;
+                font-size: 10px;
+            }
         }
         
 }
