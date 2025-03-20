@@ -632,6 +632,7 @@ th, td {
         font-size: 15px;
         font-weight: bold;
     }
+}
 
 @media screen and (min-width: 481px) and (max-width: 991px) {
 
@@ -780,29 +781,27 @@ th, td {
     }
 
 
-.table-price {
-    margin-top: 4em;
-    margin-bottom: 4em;
-    border-radius: 3px;
-    p {
-        font-family: Poppins;
-        font-size: 15px;
-        font-weight: bold;
+    .table-price {
+        margin-top: 4em;
+        margin-bottom: 4em;
+        border-radius: 3px;
+        p {
+            font-family: Poppins;
+            font-size: 15px;
+            font-weight: bold;
+        }
     }
-}
 
-th, td {
-    border: 2px solid rgba(224, 224, 224, 0.3);
-    border-radius: 4px;
-    padding: 20px;
-    text-align: center;
-    span {
-        font-family: Poppins;
-        font-size: 15px;
+    th, td {
+        border: 2px solid rgba(224, 224, 224, 0.3);
+        border-radius: 4px;
+        padding: 20px;
+        text-align: center;
+        span {
+            font-family: Poppins;
+            font-size: 15px;
+        }
     }
-}
-
-
 
 }
 @media screen and (max-width: 480px) {
@@ -1101,4 +1100,3 @@ th, td {
         
 }
 
-}
