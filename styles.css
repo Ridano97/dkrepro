@@ -98,7 +98,7 @@ a:hover {
     justify-content: space-around;
     span {
         color: white;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: Poppins ;
         font-weight: bold;
     }
 }
@@ -181,7 +181,7 @@ a:hover {
     height: 100px;
     h2 {
         color: white;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-family:Poppins ;
         font-weight: bolder;
     }
 }
@@ -239,7 +239,7 @@ a:hover {
     display: block; 
     font-weight: bold;
     color:#ECB87A;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Poppins;
 }
 .services:hover {
     cursor: pointer;
@@ -269,7 +269,7 @@ a:hover {
     background-color: #ECB87A;
     width: 30%; 
     h2 {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: Poppins ;
         color: #004654;
         margin-bottom: 2rem;
     }
@@ -293,7 +293,7 @@ a:hover {
                 -5px 5px 10px rgba(209, 209, 209, 0.3),
                 2px 5px 10px rgba(209, 209, 209, 0.3);  
     border-radius: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Poppins ;
     h3 {
         display: flex;
         margin: 15px;
@@ -305,7 +305,7 @@ a:hover {
 .notice {
     h2 {
         color: #80855E;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: Poppins ;
         text-align: center;
         margin-top: 3em;
     }
@@ -338,7 +338,7 @@ footer {
 }
 .information-company {
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Poppins ;
     font-weight: bolder;
     display: flex;
     align-items: center;
@@ -359,7 +359,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Poppins ;
     color: white;
     background-color: black;
     padding: 10px;
@@ -405,7 +405,7 @@ footer {
     border-radius: 5px ;
     margin-top: 3em;
     padding: 40px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Poppins ;
     width: 700px;
     text-align: justify;
 }
@@ -632,7 +632,6 @@ th, td {
         font-size: 15px;
         font-weight: bold;
     }
-}
 
 @media screen and (min-width: 481px) and (max-width: 991px) {
 
@@ -1100,4 +1099,6 @@ th, td {
             }
         }
         
+}
+
 }
