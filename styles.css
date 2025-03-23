@@ -226,9 +226,7 @@ a:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     width: 33.33%;
 }
-.services:nth-child(1){
-    padding: 25px 0;
-}
+
 .services img {
     width: 100px; 
     height: 100px;
