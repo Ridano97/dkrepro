@@ -188,6 +188,7 @@ a:hover {
 .container-image {
     img {
         width: 100%;
+        height: auto;
     }
     
 }
