@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="DK REPRO" content="Page principale présentant l'entreprise avec ses informations et ses différents services imprimerie, reprographie, flocage textile...">
-    <meta name="description" content="Besoin d’une imprimerie rapide et fiable ? DK Repro vous offre des impressions de haute qualité pour tous vos supports ! Découvrez nos services.">
+    <meta name="description" content="Besoin d'une imprimerie rapide et fiable ? DK Repro vous offre des impressions de haute qualité pour tous vos supports ! Découvrez nos services.">
     <link rel="shortcut icon" href="./images/icone-site.png">
     <link rel="stylesheet" href="styles.css">
     <title>DK Repro - Imprimerie professionnelle | Impression rapide et de qualité</title>
 </head>
 <body>
     <header>
-        <div>
+        <a class="brand" href="#accueil" aria-label="Accueil DK Repro">
             <img class="logo" src="./images/dkrepro.jpg" alt="logo_dkrepro">
-        </div>
+        </a>
         <nav>
             <ul class="nav">
                 <li class="nav-items"><a href="#accueil">Accueil</a></li>
@@ -22,111 +22,183 @@
             </ul>
         </nav>
     </header>
+
     <div class="price-information">
-        <span>PRIX COMPÉTITIF</span>
-        <span>PRIX DÉGRESSIF</span>
-        <span>TARIF PRÉFÉRENTIEL ENTREPRISE</span>
+        <span>Prix compétitif</span>
+        <span>Prix dégressif</span>
+        <span>Tarif préférentiel entreprise</span>
     </div>
+
     <main>
-        <div class="jumbotron">
-            <div class="content">
-                <h1 class="slogan">LA QUALITÉ D'IMPRESSION À VOTRE PORTÉE</h1>
-                <a href="#service">
-                    <button>Nos services</button>
-                </a>
+        <section id="accueil" class="jumbotron">
+            <div class="content reveal">
+                <p class="hero-kicker">Imprimerie & reprographie à Dunkerque depuis 1979</p>
+                <h1 class="slogan">Vos impressions prêtes à faire bonne impression.</h1>
+                <p class="hero-text">
+                    Tirage de plans, dossiers, affiches, supports de communication ou flocage textile :
+                    DK Repro accompagne particuliers, associations et entreprises avec précision, rapidité et conseil.
+                </p>
+                <div class="hero-actions">
+                    <a class="button primary-button" href="#service">Découvrir les services</a>
+                    <a class="button secondary-button" href="mailto:dkrepro@nordnet.fr">Envoyer un fichier</a>
+                </div>
             </div>
-        </div>
-        <section class="company">
-            <div class="logo-ecology">
+            <div class="hero-panel reveal delay-1" aria-label="Informations rapides DK Repro">
+                <span>Ouvert lun. - ven.</span>
+                <strong>9h00 - 12h30 / 14h00 - 17h30</strong>
+                <small>78 rue Félix Faure, Dunkerque</small>
+            </div>
+        </section>
+
+        <section class="quick-contact reveal">
+            <a href="mailto:dkrepro@nordnet.fr">
+                <span>Devis & documents</span>
+                <strong>dkrepro@nordnet.fr</strong>
+            </a>
+            <a href="tel:+33328601705">
+                <span>Nous appeler</span>
+                <strong>03 28 60 17 05</strong>
+            </a>
+            <a href="https://www.google.com/maps/search/?api=1&query=78+rue+Félix+Faure,+59430+Dunkerque" target="_blank" rel="noopener">
+                <span>Passer en boutique</span>
+                <strong>78 rue Félix Faure</strong>
+            </a>
+        </section>
+
+        <section class="company reveal">
+            <div class="logo-ecology" aria-label="Labels papier responsable">
                 <img src="./images/fsc.webp" alt="logo-fsc">
                 <img src="./images/pefc.webp" alt="logo-pefc">
             </div>
             <div class="biography">
-                <h2>QUI SOMMES-NOUS ?</h2>
+                <span class="section-label">Atelier local</span>
+                <h2>Une imprimerie de proximité, réactive et précise.</h2>
                 <p>
-                    Fondée en 1979 et initialement spécialisée dans le tirage de plans, DK Repro c'est une imprimerie qui s'est par la suite développée dans le domaine de la reprographie et de la copie.
+                    Fondée en 1979 autour du tirage de plans, DK Repro a grandi avec les besoins de ses clients :
+                    reprographie, impression numérique, supports de communication, reliure et textile personnalisé.
                 </p>
                 <p>
-                    Aujourd'hui, nous sommes votre partenaire de confiance pour tous vos besoins en impression numérique, photocopie et reprographie.
-                </p>
-                <p>
-                    Chez DK Repro, chaque projet est unique. C'est pourquoi nous nous engageons à vous proposer des solutions personnalisées, conçues pour répondre à vos besoins avec précision et fiabilité.
+                    Chaque demande est traitée comme un projet à part entière. Vous venez avec un fichier, une idée ou une urgence ;
+                    nous vous aidons à choisir le bon format, le bon papier et la finition adaptée.
                 </p>
             </div>
         </section>
-        <div class="customers">
-            <h2>ASSOCIATIONS - PARTICULIERS - PROFESSIONNELS</h2>
-        </div>
-        <div class="container-image">
-            <img src="./images/jumbotronprincipale_11zon.webp" alt="impression-photo">
-        </div>
-        <section id="service" class="all-services">
-            <h2>SERVICES</h2>
+
+        <section class="customers reveal">
+            <p>Associations</p>
+            <p>Particuliers</p>
+            <p>Professionnels</p>
+        </section>
+
+        <section class="container-image reveal">
+            <div class="showcase-media">
+                <img src="./images/jumbotronprincipale_11zon.webp" alt="impression-photo">
+            </div>
+            <div class="image-caption">
+                <span class="section-label">Production</span>
+                <h2>Des supports nets, sans section qui écrase la page.</h2>
+                <p>Le visuel reste présent, mais dans un format plus maîtrisé pour laisser respirer les services et les informations utiles.</p>
+            </div>
+        </section>
+
+        <section id="service" class="all-services reveal">
+            <span class="section-label">Savoir-faire</span>
+            <h2>Services d'impression</h2>
             <div class="services-content">
-                <div class="services">
+                <div class="services reveal">
                     <a href="./imprimerie.html" target="_self">
                         <img src="./images/1_11zon.webp" alt="icone-imprimante">
-                        <span>IMPRIMERIE / REPROGRAPHIE</span>
+                        <span>Imprimerie / Reprographie</span>
+                        <small>Copies, dossiers, documents couleur ou noir et blanc.</small>
                     </a>
                 </div>
-                <div class="services">
+                <div class="services reveal delay-1">
                     <a href="./communication.html" target="_self">
                         <img src="./images/2_11zon.webp" alt="icone-carte-de-visite">
-                        <span>COMMUNICATION ENTREPRISE / PARTICULIER</span>
+                        <span>Communication entreprise / particulier</span>
+                        <small>Cartes, flyers, correspondance et supports personnalisés.</small>
                     </a>
                 </div>
-                <div class="services">
+                <div class="services reveal delay-2">
                     <a href="./reliure.html" target="_self">
                         <img src="./images/3_11zon.webp" alt="icone-blocnote">
-                        <span>RELIURE</span>
+                        <span>Reliure</span>
+                        <small>Présentations, mémoires, rapports et dossiers soignés.</small>
                     </a>
                 </div>
-                <div class="services">
+                <div class="services reveal">
                     <a href="./afficheposter.html" target="_self">
                         <img src="./images/serviceposter (1).webp" alt="photoicone-poster">
-                        <span>AFFICHE / POSTER / IMPRESSION PHOTO</span>
+                        <span>Affiche / Poster / Photo</span>
+                        <small>Grand format, affichage, photo et créations visuelles.</small>
                     </a>
                 </div>
-                <div class="services">
+                <div class="services reveal delay-1">
                     <a href="./flocage.html" target="_self">
                         <img src="./images/serviceflocage.webp" alt="photo-service-flocage">
-                        <span>FLOCAGE TEXTILE</span>
+                        <span>Flocage textile</span>
+                        <small>Textiles personnalisés pour événements, équipes et marques.</small>
                     </a>
                 </div>
-                <div class="services">
+                <div class="services reveal delay-2">
                     <a href="./tiragedeplan.html" target="_self">
-                        <img src="./images/4_11zon.webp" alt="Service 8">
-                        <span>TIRAGE DE PLAN</span>
+                        <img src="./images/4_11zon.webp" alt="icone-tirage-de-plan">
+                        <span>Tirage de plan</span>
+                        <small>Plans techniques, formats larges et reproduction nette.</small>
                     </a>
                 </div>
             </div>
         </section>
-        <section class="publicity">
+
+        <section class="publicity reveal">
             <div class="local">
                 <img src="./images/local_11zon.webp" alt="picture-of-local">
             </div>
             <div class="block-container">
-                <h2>RELAIS</h2>
+                <span class="section-label">Relais colis</span>
+                <h2>Un passage, plusieurs services.</h2>
+                <p>Profitez de votre venue pour vos impressions, devis et retraits Vinted Go.</p>
                 <img src="./images/logo_vinted_11zon.webp" alt="icone-vintedgo">
             </div>
         </section>
-        <section class="information-mail">
-            <h3>ENVOYEZ-NOUS VOS DOCUMENTS PAR MAIL</h3>
-            <a href="mailto:dkrepro@nordnet.fr"><h3>dkrepro@nordnet.fr</h3></a>
-            <h3>POUR TOUTE DEMANDE DE DEVIS ÉGALEMENT</h3>
+
+        <section class="information-mail reveal">
+            <span class="section-label">Simple et rapide</span>
+            <h2>Envoyez vos documents, nous préparons le reste.</h2>
+            <a href="mailto:dkrepro@nordnet.fr"><strong>dkrepro@nordnet.fr</strong></a>
+            <p>Joignez vos fichiers, précisez les quantités, le format et la finition souhaitée pour recevoir un retour clair.</p>
         </section>
-        <section class="notice">
-            <h2>L'AVIS DE NOS CLIENTS</h2>
-            <script src="https://static.elfsight.com/platform/platform.js" async></script>
-            <div class="elfsight-app-7a802c92-5cc6-40be-a43d-0d882f02c789" data-elfsight-app-lazy></div>
+
+        <section class="notice reveal">
+            <div class="notice-heading">
+                <span class="section-label">Avis clients</span>
+                <h2>Une adresse bien notée à Dunkerque.</h2>
+                <p>Note publique observée sur les avis Google et annuaires locaux.</p>
+            </div>
+            <div class="review-summary" aria-label="Résumé des avis clients DK Repro">
+                <div class="rating-card">
+                    <span class="rating-score">4,5</span>
+                    <span class="rating-stars">★★★★★</span>
+                    <strong>Plus de 50 notes</strong>
+                    <a class="button primary-button" href="https://www.google.com/search?q=DK+Repro+Avis&tbm=lcl#lkt=LocalPoiReviews" target="_blank" rel="noopener">Voir les avis Google</a>
+                </div>
+                <div class="rating-bars">
+                    <div><span>5 étoiles</span><meter min="0" max="100" value="64">64%</meter><strong>64%</strong></div>
+                    <div><span>4 étoiles</span><meter min="0" max="100" value="25">25%</meter><strong>25%</strong></div>
+                    <div><span>3 étoiles</span><meter min="0" max="100" value="7">7%</meter><strong>7%</strong></div>
+                    <div><span>2 étoiles</span><meter min="0" max="100" value="2">2%</meter><strong>2%</strong></div>
+                    <div><span>1 étoile</span><meter min="0" max="100" value="2">2%</meter><strong>2%</strong></div>
+                </div>
+            </div>
         </section>
     </main>
-    <footer id="contact" >
+
+    <footer id="contact">
         <div class="first">
             <div class="identity">
                 <img class="logo-company" src="./images/dkrepro.jpg" alt="logodkrepro">
-                <a href="https://www.facebook.com/profile.php?id=61550481522279" target="_blank">
-                    <img class="social-media" src="./images/facebook.webp" alt="logo-facebook">
+                <a class="facebook-link" href="https://www.facebook.com/profile.php?id=61550481522279" target="_blank" rel="noopener" aria-label="Facebook DK Repro">
+                    <span aria-hidden="true">f</span>
                 </a>
             </div>
             <div class="information-company">
@@ -138,47 +210,66 @@
             </div>
         </div>
         <div class="third">
-            <a href="https://www.google.com/maps/search/?api=1&query=78+rue+Félix+Faure,+59430+Dunkerque" target="_blank">
+            <a href="https://www.google.com/maps/search/?api=1&query=78+rue+Félix+Faure,+59430+Dunkerque" target="_blank" rel="noopener">
                 <img class="screenshot-plan" src="./images/plangoogle.webp" alt="plan-de-lenseigne">
             </a>
         </div>
     </footer>
+
     <div class="seo">
-        <span>DK REPRO © 2025 TOUS DROITS RÉSERVÉS</span>
+        <span>DK REPRO © 2026 TOUS DROITS RÉSERVÉS</span>
         <a href="mentionslegales.html" target="_blank"><p>MENTIONS LÉGALES</p></a>
         <a href="gestiondescookies.html" target="_blank"><p>GESTION DES COOKIES</p></a>
     </div>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TKDYRTHQNN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-TKDYRTHQNN');
-</script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@latest/tarteaucitron.js"></script>
-<script type="text/javascript">
-  tarteaucitron.init({
-    "privacyUrl": "/politique-de-cookies", /* Lien vers votre politique de cookies */
-    "hashtag": "#tarteaucitron", /* Identifiant pour le bandeau */
-    "cookieName": "tarteaucitron", /* Nom du cookie de gestion */
-    "orientation": "bottom", /* Position du bandeau */
-    "showAlertSmall": false, /* Petite icône flottante */
-    "cookieslist": true, /* Afficher la liste des cookies */
-    "adblocker": false, /* Détection d'Adblock */
-    "AcceptAllCta": true, /* Bouton "Tout accepter" */
-    "DenyAllCta": true, /* Bouton "Tout refuser" */
-    "highPrivacy": true, /* Blocage des cookies avant consentement */
-    "handleBrowserDNTRequest": false, /* Respect du "Do Not Track" */
-    "removeCredit": true, /* Suppression du lien vers Tarteaucitron */
-    "moreInfoLink": true, /* Affichage du bouton "En savoir plus" */
-    "useExternalCss": false /* Utilisation des styles par défaut */
-  });
-</script>
-<script type="text/javascript">
-    tarteaucitron.user.gtagUa = 'UA-XXXXX-Y';
-    (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TKDYRTHQNN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-TKDYRTHQNN');
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@latest/tarteaucitron.js"></script>
+    <script type="text/javascript">
+        if (window.tarteaucitron) {
+            tarteaucitron.init({
+                "privacyUrl": "/politique-de-cookies",
+                "hashtag": "#tarteaucitron",
+                "cookieName": "tarteaucitron",
+                "orientation": "bottom",
+                "showAlertSmall": false,
+                "cookieslist": true,
+                "adblocker": false,
+                "AcceptAllCta": true,
+                "DenyAllCta": true,
+                "highPrivacy": true,
+                "handleBrowserDNTRequest": false,
+                "removeCredit": true,
+                "moreInfoLink": true,
+                "useExternalCss": false
+            });
+
+            tarteaucitron.user.gtagUa = 'UA-XXXXX-Y';
+            (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
+        }
+    </script>
+    <script>
+        const revealElements = document.querySelectorAll('.reveal');
+
+        if ('IntersectionObserver' in window) {
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.14 });
+
+            revealElements.forEach((element) => revealObserver.observe(element));
+        } else {
+            revealElements.forEach((element) => element.classList.add('is-visible'));
+        }
+    </script>
 </body>
 </html>
