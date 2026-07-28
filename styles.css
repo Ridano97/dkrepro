@@ -323,14 +323,15 @@ header > div {
 .quick-contact {
     display: grid;
     gap: 1px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     margin: -34px auto 0;
-    max-width: min(1060px, calc(100% - 32px));
+    max-width: min(1180px, calc(100% - 32px));
     position: relative;
     z-index: 2;
 }
 
-.quick-contact a {
+.quick-contact a,
+.payment-card {
     background: var(--white);
     border: 1px solid var(--line);
     display: grid;
@@ -343,11 +344,41 @@ header > div {
     border-radius: var(--radius) 0 0 var(--radius);
 }
 
-.quick-contact a:last-child {
+.quick-contact .payment-card {
     border-radius: 0 var(--radius) var(--radius) 0;
 }
 
-.quick-contact a:hover {
+.payment-card {
+    background: linear-gradient(145deg, var(--green-deep), var(--green));
+    color: var(--white);
+}
+
+.payment-card span {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.payment-card strong {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+.payment-card em {
+    align-items: center;
+    background: var(--amber);
+    border-radius: 7px;
+    color: var(--ink);
+    display: inline-flex;
+    font-style: normal;
+    font-weight: 900;
+    justify-content: center;
+    letter-spacing: 0;
+    min-width: 44px;
+    padding: 4px 8px;
+}
+
+.quick-contact a:hover,
+.payment-card:hover {
     background: var(--ink);
     color: var(--white);
     transform: translateY(-5px);
@@ -809,6 +840,23 @@ footer {
     font-weight: 700;
 }
 
+.footer-payment {
+    align-items: center;
+    color: var(--amber);
+    display: inline-flex;
+    gap: 9px;
+    justify-content: center;
+}
+
+.footer-payment span {
+    background: var(--amber);
+    border-radius: 7px;
+    color: var(--ink);
+    font-weight: 900;
+    line-height: 1;
+    padding: 5px 8px;
+}
+
 .information-company a:hover {
     color: var(--amber);
 }
@@ -1179,7 +1227,8 @@ td span {
 
     .quick-contact a,
     .quick-contact a:first-child,
-    .quick-contact a:last-child {
+    .quick-contact a:last-child,
+    .payment-card {
         border-radius: var(--radius);
     }
 
